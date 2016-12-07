@@ -21,7 +21,12 @@ export const actions = {
 // Action Handlers
 // ------------------------------------
 const ACTION_HANDLERS = {
-  [DATA_RECEIVED] : (state = [], action) => state.concat([{a:state.length}])
+  [DATA_RECEIVED]: (state = [], action) => state.concat([{
+    uuid: state.length,
+    text: 'feed text' + new Date(),
+    title: 'this is the feed titlt' + new Date(),
+    published: new Date(),
+  }])
 }
 
 // ------------------------------------
