@@ -27,7 +27,7 @@ const ACTION_HANDLERS = {
 // ------------------------------------
 // Reducer
 // ------------------------------------
-const initialState = 0
+const initialState = []
 export default function feedReducer (state = initialState, action) {
   const handler = ACTION_HANDLERS[action.type]
 

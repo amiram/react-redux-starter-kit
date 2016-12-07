@@ -1,15 +1,14 @@
 import React from 'react'
 
 export const Feed = (props) => (
-  <div style={{ margin: '0 auto' }} >
+  <div style={{margin: '0 auto'}}>
     Feed
+    <button className="btn btn-default" onClick={this.dataRecieved.bind(this)}>Add Data</button>
   </div>
 )
 
 Feed.propTypes = {
-  // counter     : React.PropTypes.number.isRequired,
-  // doubleAsync : React.PropTypes.func.isRequired,
-  // increment   : React.PropTypes.func.isRequired
+  dataRecieved : React.PropTypes.func.isRequired,
 }
 
 export default Feed
