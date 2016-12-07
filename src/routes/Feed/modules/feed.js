@@ -21,7 +21,7 @@ export const actions = {
 // Action Handlers
 // ------------------------------------
 const ACTION_HANDLERS = {
-  [DATA_RECEIVED] : (state = [], action) => state.concat(action.payload)
+  [DATA_RECEIVED] : (state = [], action) => state.concat([{a:state.length}])
 }
 
 // ------------------------------------
